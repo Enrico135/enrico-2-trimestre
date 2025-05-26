@@ -9,7 +9,14 @@ function sobra() {
      num2 = Number(window.prompt("digite outro numero"));
 
      resultado = num1 % num2;
-     
+        alert("o resultado e " + resultado + ".");
+     numero = resultado % 2;
+     alert("o resultado e " + resultado + ".");
+     if (numero == 0) {
+          alert("par");
+     }else {
+          alert("impar");
+}
 }
 
 function multiplicacao() {

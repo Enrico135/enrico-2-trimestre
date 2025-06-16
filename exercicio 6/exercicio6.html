@@ -1,53 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Campeonato de Basquete 3x3</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      max-width: 400px;
-      margin: auto;
-    }
-    #alerta {
-      color: green;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>Document</title>
+   
 </head>
 <body>
+    <h1>Basquete 3x3</h1>
 
-  <h2>Inscrição para o Campeonato 3x3</h2>
-  <p>Interessados: <span id="inscritos">0</span></p>
-  <p>Equipes possíveis: <span id="equipes">0</span></p>
-  <button onclick="registrarInscricao()">Inscrever-se</button>
-
-  <div id="alerta"></div>
-
-  <script>
-    let inscritos = 0;
-
-    function registrarInscricao() {
-      inscritos++;
-
-     
-      document.getElementById("inscritos").textContent = inscritos;
-
-
-      const equipes = Math.floor(inscritos / 3);
-      document.getElementById("equipes").textContent = equipes;
-
-     
-      const alertaDiv = document.getElementById("alerta");
-      if (equipes >= 4) {
-        alertaDiv.textContent = "✅ Número mínimo de equipes atingido! O campeonato pode acontecer!";
-      } else {
-        alertaDiv.textContent = "";
-      }
-    }
-  </script>
-
+ <p> clique aqui para se increver </p>
+ 
+    <button onclick="inscricao()">inscriçâo</button>
+    <div id="resultado">
+        <p></p>
+        
+    </div>
+      
+       <script src="script6.js"></script>
+    
 </body>
 </html>

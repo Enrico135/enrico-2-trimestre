@@ -13,10 +13,12 @@ function media() {
        resultado = document.querySelector('#resultado');
        resultado.innerHTML= `<p>Voce foi aprovado ${nota.toFixed(1)}</p>`
        console.log("voce foi aprovado");
+       alert(resultado)
     }
  else {
-        let dif = 60 - media;
+        let dif = 60 <= media;
      resultado = document.querySelector('#resultado');
       resultado.innerHTML= `<p>voce foi reprovado e faltam ${dif.toFixed(1)} pontos</p>`
+      alert(resultado)
     }
 }

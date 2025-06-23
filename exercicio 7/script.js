@@ -1,7 +1,7 @@
 let mostraResultado = document.querySelector("#resultado");
 let inscritos = 0;
 
-function cliques(){
+function contar(){
 
     inscritos += 1;
     times = parseInt(inscritos);

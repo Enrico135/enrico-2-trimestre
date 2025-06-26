@@ -15,7 +15,7 @@ function contar () {
           MostraResultado.innerHTML += `${contador} &#x1F449 `;
     }
     contador -=1;
-}
+ }
 
     MostraResultado.innerHTML += `&#x1F3C1`;
 }
